@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开发在线首页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../study/swiper-bundle.min.css">
+</head>
+
+<body>
+<!-- 1.头部区域开始啦 -->
+<div class="header w">
+    <!-- logo部分 -->
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+    <!-- 导航栏部分 nav -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">课程</a></li>
+            <li><a href="#">职业规划</a></li>
+        </ul>
+    </div>
+    <!-- 搜索模块 -->
+    <div class="search">
+        <input type="text" value="输入关键词">
+        <button></button>
+    </div>
+    <!-- 用户模块 -->
+    <div class="user">
+        <img src="images/user.png" alt="" style="...">
+        qq-cao
+    </div>
+</div>
+<!-- 头部区域结束啦 -->
+<!-- 2. banner部分start -->
+<div class="banner">
+
+    <!-- 版心 -->
+    <div class="w">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../study/images/banner2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../study/images/banner1.png">
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+        <!-- Swiper JS -->
+        <script src="../study/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <div class="subnav">
+
+            <ul>
+                <li><a href="#">前端开发 <span> &gt; </span></a></li>
+                <li><a href="#">HTML <span> &gt; </span> </a></li>
+                <li><a href="#">CSS <span> &gt; </span> </a></li>
+                <li><a href="#">Vuejs <span> &gt; </span> </a></li>
+                <li><a href="#">java<span> &gt; </span> </a></li>
+                <li><a href="#">Python <span> &gt; </span> </a></li>
+                <li><a href="#">C++<span> &gt; </span> </a></li>
+                <li><a href="#">PHP <span> &gt; </span> </a></li>
+                <li><a href="#">E语言 <span> &gt; </span> </a></li>
+            </ul>
+        </div>
+        <!-- course 课程表模块 -->
+        <div class="course">
+            <h2>我的课程表</h2>
+            <div class="bd">
+                <ul>
+                    <li>
+                        <h4>继续学习 程序语言设计</h4>
+                        <p>正在学习-使用对象</p>
+                    </li>
+                    <li>
+                        <h4>继续学习 程序语言设计</h4>
+                        <p>正在学习-使用对象</p>
+                    </li>
+                    <li>
+                        <h4>继续学习 程序语言设计</h4>
+                        <p>正在学习-使用对象</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="more">全部课程</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner部分end -->
+<!-- 3.精品推荐模块开始 -->
+<div class="goods w">
+    <h3>精品推荐</h3>
+    <ul>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Vue</a></li>
+        <li><a href="#">Ajax</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">MVVM</a></li>
+    </ul>
+    <a href="#" class="mod">修改兴趣</a>
+</div>
+<!-- 精品推荐模块结束 -->
+<!-- 4. box核心内容区域开始 -->
+<div class="box w">
+    <div class="box-hd">
+        <h3>精品推荐</h3>
+        <a href="#">查看全部</a>
+    </div>
+    <div class="box-bd">
+        <ul class="clearfix">
+            <li>
+                <img src="images/pic.png" alt="">
+                <h4>
+                    博客系统实战项目演练
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic1.png" alt="">
+                <h4>
+                    Java开发程序
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic2.png" alt="">
+                <h4>
+                    PHP项目
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic3.png" alt="">
+                <h4>
+                    Python实训
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic4.png" alt="">
+                <h4>
+                    C++练习
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic5.png" alt="">
+                <h4>
+                    Vuejs简介
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic6.png" alt="">
+                <h4>
+                    jQuery库
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic7.png" alt="">
+                <h4>
+                    JavaScript框架
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic8.png" alt="">
+                <h4>
+                    Json练习
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+            <li>
+                <img src="images/pic9.png" alt="">
+                <h4>
+                    Ajax简介
+                </h4>
+                <div class="info">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!-- 4. box核心内容区域结束 -->
+
+<!-- 5. footer 模块制作 -->
+<div class="footer">
+    <div class="w">
+        <div class="copyright">
+            <img src="images/logo.png" alt="">
+            <p>这是自写静态页面</p>
+            <a href="#" class="app">下载APP</a>
+        </div>
+        <div class="links">
+            <dl>
+                <dt>关于学成网</dt>
+                <dd><a href="#">关于</a></dd>
+                <dd><a href="#">管理团队</a></dd>
+                <dd><a href="#">工作机会</a></dd>
+                <dd><a href="#">客户服务</a></dd>
+                <dd><a href="#">帮助</a></dd>
+            </dl>
+            <dl>
+                <dt>关于学成网</dt>
+                <dd><a href="#">关于</a></dd>
+                <dd><a href="#">管理团队</a></dd>
+                <dd><a href="#">工作机会</a></dd>
+                <dd><a href="#">客户服务</a></dd>
+                <dd><a href="#">帮助</a></dd>
+            </dl>
+            <dl>
+                <dt>关于学成网</dt>
+                <dd><a href="#">关于</a></dd>
+                <dd><a href="#">管理团队</a></dd>
+                <dd><a href="#">工作机会</a></dd>
+                <dd><a href="#">客户服务</a></dd>
+                <dd><a href="#">帮助</a></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
